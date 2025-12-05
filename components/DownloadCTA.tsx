@@ -13,7 +13,7 @@ const DownloadCTA = () => {
                     Ready to Start Your<br />Healthy Journey?
                 </h2>
                 <p className="text-xl text-emerald-50 mb-12 max-w-2xl mx-auto">
-                    Join 100,000+ users who are eating better, wasting less, and living healthier lives with GlobalEats.
+                    Join 100,000+ users who are eating better, wasting less, and living healthier lives with Prepzi.
                 </p>
 
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">

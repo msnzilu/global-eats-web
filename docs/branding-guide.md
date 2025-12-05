@@ -1,8 +1,8 @@
-# 🌍 GlobalEats - Website Branding & Redesign Prompt
+# 🌍 Prepzi - Website Branding & Redesign Prompt
 
 ## **Brand Identity**
 
-**Name:** GlobalEats  
+**Name:** Prepzi  
 **Tagline:** "Eat Global. Waste Less. Live Better."
 
 **Mission:** A healthy eating platform that helps users discover nutritious recipes from around the world while minimizing food waste and promoting sustainable living.
@@ -196,7 +196,7 @@ Modern health app, farmer's market aesthetic, clean food photography, minimalist
 ## **Project Structure**
 
 ```
-global-eats-web/
+prepzi-web/
 ├── app/
 │   ├── favicon.ico
 │   ├── globals.css
@@ -218,4 +218,4 @@ global-eats-web/
 └── tsconfig.json
 ```
 
-Use this comprehensive guide to create a cohesive, modern, and conversion-focused design that truly represents the GlobalEats brand! 🌍✨
+Use this comprehensive guide to create a cohesive, modern, and conversion-focused design that truly represents the Prepzi brand! 🌍✨

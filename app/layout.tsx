@@ -16,12 +16,12 @@ const outfit = Outfit({
 });
 
 export const metadata: Metadata = {
-  title: 'GlobalEats - Eat Global. Waste Less. Live Better.',
+  title: 'Prepzi - Eat Global. Waste Less. Live Better.',
   description: 'Discover nutritious recipes from 80+ countries while minimizing food waste and achieving your health goals.',
   keywords: ['healthy eating', 'global recipes', 'food waste', 'nutrition', 'meal planning'],
-  authors: [{ name: 'GlobalEats' }],
+  authors: [{ name: 'Prepzi' }],
   openGraph: {
-    title: 'GlobalEats - Eat Global. Waste Less. Live Better.',
+    title: 'Prepzi - Eat Global. Waste Less. Live Better.',
     description: 'Discover nutritious recipes from 80+ countries while minimizing food waste.',
     type: 'website',
   },

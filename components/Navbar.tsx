@@ -38,7 +38,7 @@ export default function Navbar() {
                             <Leaf className="w-6 h-6 text-white" />
                         </div>
                         <span className="text-2xl font-bold text-slate-900">
-                            Global<span className="text-emerald-600">Eats</span>
+                            Prep<span className="text-emerald-600">Zi</span>
                         </span>
                     </div>
 

@@ -6,7 +6,7 @@ const Testimonials = () => {
         {
             name: "Sarah Johnson",
             role: "Lost 15 lbs in 2 months",
-            comment: "GlobalEats completely transformed my relationship with food. The recipes are delicious and I've never felt healthier!",
+            comment: "Prepzi completely transformed my relationship with food. The recipes are delicious and I've never felt healthier!",
             avatar: "SJ",
             rating: 5
         },
