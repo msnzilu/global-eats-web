@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useState, useEffect } from 'react';
+import Link from 'next/link';
 import { Menu, X, Leaf } from 'lucide-react';
 
 export default function Navbar() {
@@ -17,10 +18,10 @@ export default function Navbar() {
     }, []);
 
     const navLinks = [
-        { name: 'Features', href: '#features' },
-        { name: 'How It Works', href: '#how-it-works' },
-        { name: 'Testimonials', href: '#testimonials' },
-        { name: 'Pricing', href: '#pricing' },
+        { name: 'Features', href: '#features', isExternal: false },
+        { name: 'How It Works', href: '#how-it-works', isExternal: false },
+        { name: 'Testimonials', href: '#testimonials', isExternal: false },
+        { name: 'FAQs', href: '/faqs', isExternal: true },
     ];
 
     return (
@@ -33,25 +34,35 @@ export default function Navbar() {
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex items-center justify-between h-16 md:h-20">
                     {/* Logo */}
-                    <div className="flex items-center gap-2">
+                    <Link href="/" className="flex items-center gap-2">
                         <div className="w-10 h-10 bg-gradient-to-br from-emerald-600 to-teal-600 rounded-xl flex items-center justify-center">
                             <Leaf className="w-6 h-6 text-white" />
                         </div>
                         <span className="text-2xl font-bold text-slate-900">
                             Prep<span className="text-emerald-600">Zi</span>
                         </span>
-                    </div>
+                    </Link>
 
                     {/* Desktop Navigation */}
                     <div className="hidden md:flex items-center gap-8">
                         {navLinks.map((link) => (
-                            <a
-                                key={link.name}
-                                href={link.href}
-                                className="text-slate-700 hover:text-emerald-600 font-medium transition-colors duration-200"
-                            >
-                                {link.name}
-                            </a>
+                            link.isExternal ? (
+                                <Link
+                                    key={link.name}
+                                    href={link.href}
+                                    className="text-slate-700 hover:text-emerald-600 font-medium transition-colors duration-200"
+                                >
+                                    {link.name}
+                                </Link>
+                            ) : (
+                                <a
+                                    key={link.name}
+                                    href={link.href}
+                                    className="text-slate-700 hover:text-emerald-600 font-medium transition-colors duration-200"
+                                >
+                                    {link.name}
+                                </a>
+                            )
                         ))}
                     </div>
 
@@ -86,18 +97,34 @@ export default function Navbar() {
                 <div className="md:hidden bg-white border-t border-slate-200 shadow-lg">
                     <div className="px-4 py-6 space-y-4">
                         {navLinks.map((link) => (
-                            <a
-                                key={link.name}
-                                href={link.href}
-                                onClick={() => setIsMobileMenuOpen(false)}
-                                className="block text-slate-700 hover:text-emerald-600 font-medium py-2 transition-colors"
-                            >
-                                {link.name}
-                            </a>
+                            link.isExternal ? (
+                                <Link
+                                    key={link.name}
+                                    href={link.href}
+                                    onClick={() => setIsMobileMenuOpen(false)}
+                                    className="block text-slate-700 hover:text-emerald-600 font-medium py-2 transition-colors"
+                                >
+                                    {link.name}
+                                </Link>
+                            ) : (
+                                <a
+                                    key={link.name}
+                                    href={link.href}
+                                    onClick={() => setIsMobileMenuOpen(false)}
+                                    className="block text-slate-700 hover:text-emerald-600 font-medium py-2 transition-colors"
+                                >
+                                    {link.name}
+                                </a>
+                            )
                         ))}
-                        <button className="w-full px-6 py-3 bg-gradient-to-r from-emerald-600 to-teal-600 text-white rounded-lg font-semibold hover:shadow-lg transition-all duration-200">
+                        <a
+                            href="https://play.google.com/apps/internaltest/4699099946547725940"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="block w-full px-6 py-3 bg-gradient-to-r from-emerald-600 to-teal-600 text-white rounded-lg font-semibold hover:shadow-lg transition-all duration-200 text-center"
+                        >
                             Download App
-                        </button>
+                        </a>
                     </div>
                 </div>
             )}
