@@ -9,6 +9,6 @@ export default function robots(): MetadataRoute.Robots {
         disallow: ['/api/', '/admin/', '/private/'],
       },
     ],
-    sitemap: 'https://prepzi.com/sitemap.xml',
+    sitemap: 'https://prepzi.app/sitemap.xml',
   }
 }
