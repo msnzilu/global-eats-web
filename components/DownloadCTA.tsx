@@ -17,14 +17,24 @@ const DownloadCTA = () => {
                 </p>
 
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                    <button className="group px-8 py-4 bg-white text-emerald-600 rounded-xl font-semibold shadow-2xl hover:shadow-3xl transform hover:-translate-y-1 transition-all duration-300 flex items-center justify-center gap-2">
+                    {/* <a 
+                        href="https://apps.apple.com/app/your-app-id" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="group px-8 py-4 bg-white text-emerald-600 rounded-xl font-semibold shadow-2xl hover:shadow-3xl transform hover:-translate-y-1 transition-all duration-300 flex items-center justify-center gap-2 no-underline"
+                    >
                         <Apple className="w-5 h-5" />
                         Download on App Store
-                    </button>
-                    <button className="group px-8 py-4 bg-emerald-800 text-white rounded-xl font-semibold shadow-2xl hover:shadow-3xl transform hover:-translate-y-1 transition-all duration-300 flex items-center justify-center gap-2 border-2 border-emerald-700">
+                    </a> */}
+                    <a 
+                        href="https://play.google.com/apps/internaltest/4699099946547725940" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="group px-8 py-4 bg-emerald-800 text-white rounded-xl font-semibold shadow-2xl hover:shadow-3xl transform hover:-translate-y-1 transition-all duration-300 flex items-center justify-center gap-2 border-2 border-emerald-700 no-underline"
+                    >
                         <Download className="w-5 h-5" />
                         Get it on Google Play
-                    </button>
+                    </a>
                 </div>
 
                 <div className="mt-12 text-emerald-50 text-sm">

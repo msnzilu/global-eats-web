@@ -8,7 +8,7 @@ const Footer = () => {
                 <div className="text-center mb-8">
                     <h3 className="text-white font-bold text-2xl mb-3">Prepzi</h3>
                     <p className="text-slate-400 mb-6">
-                        Eat Global. Waste Less. Live Better.
+                        Eat Healthy. Waste Less. Live Better.
                     </p>
                     <div className="flex justify-center gap-6 text-sm">
                         <Link href="/privacy" className="hover:text-emerald-400 transition-colors">Privacy Policy</Link>
@@ -20,7 +20,7 @@ const Footer = () => {
                 </div>
 
                 <div className="border-t border-slate-800 pt-6 text-center text-sm text-slate-400">
-                    <p>© 2024 Prepzi. All rights reserved.</p>
+                    <p>©2024 Prepzi. All rights reserved.</p>
                 </div>
             </div>
         </footer>

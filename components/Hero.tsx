@@ -18,7 +18,7 @@ export default function Hero() {
     ];
 
     return (
-        <div className="relative min-h-screen bg-gradient-to-br from-slate-50 via-emerald-50 to-teal-50 overflow-hidden">
+        <div className="relative bg-gradient-to-br from-slate-50 via-emerald-50 to-teal-50 overflow-hidden">
             {/* Floating Background Elements */}
             <div className="absolute top-20 left-10 text-6xl opacity-20 animate-bounce">🥬</div>
             <div className="absolute top-40 right-20 text-5xl opacity-20 animate-pulse">🥑</div>
@@ -34,7 +34,7 @@ export default function Hero() {
 
                     {/* Main Headline */}
                     <h1 className="text-6xl md:text-7xl lg:text-8xl font-bold text-slate-900 mb-6 tracking-tight">
-                        Eat Global.<br />
+                        Eat Healthy.<br />
                         <span className="bg-gradient-to-r from-emerald-600 to-teal-600 bg-clip-text text-transparent">Waste Less.</span><br />
                         Live Better.
                     </h1>
@@ -47,7 +47,7 @@ export default function Hero() {
                     <div className="flex flex-wrap justify-center gap-6 md:gap-8 mb-12">
                         <div className="text-center">
                             <div className="text-3xl font-bold text-emerald-600">50K+</div>
-                            <div className="text-sm text-slate-600">Recipes</div>
+                            <div className="text-sm text-slate-600">Global Recipes</div>
                         </div>
                         <div className="text-center">
                             <div className="flex items-center justify-center gap-1">
@@ -56,22 +56,25 @@ export default function Hero() {
                             </div>
                             <div className="text-sm text-slate-600">Rating</div>
                         </div>
-                        <div className="text-center">
+                        {/* <div className="text-center">
                             <div className="text-3xl font-bold text-emerald-600">100K+</div>
                             <div className="text-sm text-slate-600">Users</div>
-                        </div>
+                        </div> */}
                     </div>
 
                     {/* CTA Buttons */}
                     <div className="flex flex-col sm:flex-row gap-4 justify-center mb-16">
-                        <button className="group px-8 py-4 bg-gradient-to-r from-emerald-600 to-teal-600 text-white rounded-xl font-semibold shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300 flex items-center justify-center gap-2">
+                        {/* <button className="group px-8 py-4 bg-gradient-to-r from-emerald-600 to-teal-600 text-white rounded-xl font-semibold shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300 flex items-center justify-center gap-2">
                             <Apple className="w-5 h-5" />
                             Download on App Store
-                        </button>
-                        <button className="group px-8 py-4 bg-white text-slate-700 rounded-xl font-semibold shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300 flex items-center justify-center gap-2 border border-slate-200">
+                        </button> */}
+                        <a
+                            href="https://play.google.com/apps/internaltest/4699099946547725940" 
+                            target="_blank" 
+                            rel="noopener noreferrer" className="group px-8 py-4 bg-white text-slate-700 rounded-xl font-semibold shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300 flex items-center justify-center gap-2 border border-slate-200">
                             <Download className="w-5 h-5" />
                             Get it on Google Play
-                        </button>
+                        </a>
                     </div>
 
                     {/* Floating Food Cards */}

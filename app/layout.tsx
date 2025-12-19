@@ -20,6 +20,11 @@ export const metadata: Metadata = {
   description: 'Discover nutritious recipes from 80+ countries while minimizing food waste and achieving your health goals.',
   keywords: ['healthy eating', 'global recipes', 'food waste', 'nutrition', 'meal planning'],
   authors: [{ name: 'Prepzi' }],
+  icons: {
+    icon: '/favicon.png',
+    shortcut: '/favicon.png',
+    apple: '/favicon.png',
+  },
   openGraph: {
     title: 'Prepzi - Eat Global. Waste Less. Live Better.',
     description: 'Discover nutritious recipes from 80+ countries while minimizing food waste.',
