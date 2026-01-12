@@ -18,9 +18,9 @@ export default function Navbar() {
     }, []);
 
     const navLinks = [
-        { name: 'Features', href: '#features', isExternal: false },
-        { name: 'How It Works', href: '#how-it-works', isExternal: false },
-        { name: 'Testimonials', href: '#testimonials', isExternal: false },
+        { name: 'Features', href: '/features', isExternal: true },
+        { name: 'How It Works', href: '/how-it-works', isExternal: true },
+        { name: 'Testimonials', href: '/testimonials', isExternal: true },
         { name: 'FAQs', href: '/faqs', isExternal: true },
     ];
 

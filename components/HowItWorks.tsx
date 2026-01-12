@@ -77,7 +77,7 @@ const HowItWorks = () => {
                     </div>
 
                     {/* Video Guide Column */}
-                    <div className="lg:pt-0 lg:pl-8">
+                    {/* <div className="lg:pt-0 lg:pl-8">
                         <div className="sticky top-24 lg:top-32 self-start">
                             <div className="text-center mb-6 lg:mb-8">
                                 <h3 className="text-2xl lg:text-3xl font-bold text-slate-900 mb-4">Watch Our Quick Tutorial</h3>
@@ -103,7 +103,7 @@ const HowItWorks = () => {
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> */}
                 </div>
             </div>
         </div>

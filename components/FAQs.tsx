@@ -55,14 +55,14 @@ const FAQ = () => {
       <div className="max-w-4xl mx-auto">
         {/* Section Header */}
         <div className="text-center mb-12">
-          <h2 
+          <h2
             id="faq-heading"
             className="text-4xl md:text-5xl font-bold text-gray-900 mb-4"
           >
             Frequently Asked Questions
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Everything you need to know about Prepzi. Can't find the answer you're looking for? 
+            Everything you need to know about Prepzi. Can't find the answer you're looking for?
             <a href="/contact" className="text-green-600 hover:text-green-700 ml-1 underline">
               Contact our support team
             </a>
@@ -87,17 +87,15 @@ const FAQ = () => {
                   {faq.question}
                 </h3>
                 <ChevronDown
-                  className={`w-6 h-6 text-green-600 flex-shrink-0 transition-transform duration-300 ${
-                    openIndex === index ? 'rotate-180' : ''
-                  }`}
+                  className={`w-6 h-6 text-green-600 flex-shrink-0 transition-transform duration-300 ${openIndex === index ? 'rotate-180' : ''
+                    }`}
                 />
               </button>
-              
+
               <div
                 id={`faq-answer-${index}`}
-                className={`overflow-hidden transition-all duration-300 ease-in-out ${
-                  openIndex === index ? 'max-h-96' : 'max-h-0'
-                }`}
+                className={`overflow-hidden transition-all duration-300 ease-in-out ${openIndex === index ? 'max-h-96' : 'max-h-0'
+                  }`}
               >
                 <div className="px-6 pb-5 pt-2">
                   <p className="text-gray-700 leading-relaxed">
@@ -110,7 +108,7 @@ const FAQ = () => {
         </div>
 
         {/* CTA */}
-        <div className="mt-12 text-center">
+        {/* <div className="mt-12 text-center">
           <p className="text-gray-600 mb-4">Still have questions?</p>
           <a
             href="/contact"
@@ -118,7 +116,7 @@ const FAQ = () => {
           >
             Get in Touch
           </a>
-        </div>
+        </div> */}
       </div>
 
       {/* Structured Data for SEO */}

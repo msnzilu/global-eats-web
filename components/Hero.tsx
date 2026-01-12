@@ -67,13 +67,13 @@ export default function Hero() {
                                 </div>
                             </a>
 
-                            <button
+                            {/* <button
                                 onClick={() => setShowVideoModal(true)}
                                 className="px-8 py-4 bg-white text-slate-700 border border-slate-200 rounded-xl font-bold hover:bg-slate-50 transition-all duration-300 flex items-center justify-center gap-3 shadow-md"
                             >
                                 <Play className="w-6 h-6 fill-slate-700" />
                                 Watch Demo
-                            </button>
+                            </button> */}
                         </div>
 
                         {/* Quick Stats */}
