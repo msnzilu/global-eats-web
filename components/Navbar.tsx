@@ -118,7 +118,7 @@ export default function Navbar() {
                             )
                         ))}
                         <a
-                            href="https://play.google.com/apps/internaltest/4699099946547725940"
+                            href="https://play.google.com/store/apps/details?id=com.prepzi.app&pcampaignid=web_share"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="block w-full px-6 py-3 bg-gradient-to-r from-emerald-600 to-teal-600 text-white rounded-lg font-semibold hover:shadow-lg transition-all duration-200 text-center"

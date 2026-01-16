@@ -50,7 +50,7 @@ export default function Hero() {
                         {/* CTA Buttons */}
                         <div className="flex flex-col sm:flex-row gap-4 mb-12">
                             <a
-                                href="https://play.google.com/apps/testing/com.prepzi.app"
+                                href="https://play.google.com/store/apps/details?id=com.prepzi.app&pcampaignid=web_share"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="group px-6 py-2 bg-white text-slate-900 rounded-xl font-medium shadow-lg hover:shadow-xl border border-slate-100 transform hover:-translate-y-0.5 transition-all duration-300 flex items-center justify-center gap-3"

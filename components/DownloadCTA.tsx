@@ -27,7 +27,7 @@ const DownloadCTA = () => {
                         Download on App Store
                     </a> */}
                     <a
-                        href="https://play.google.com/apps/testing/com.prepzi.app"
+                        href="https://play.google.com/store/apps/details?id=com.prepzi.app&pcampaignid=web_share"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="group px-8 py-3 bg-white text-slate-900 rounded-xl font-medium shadow-2xl hover:shadow-3xl transform hover:-translate-y-1 transition-all duration-300 flex items-center justify-center gap-3 no-underline"
