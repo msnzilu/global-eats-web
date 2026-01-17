@@ -122,23 +122,13 @@ export default function Hero() {
                                 <div className="absolute inset-0 bg-white overflow-hidden">
                                     <div className="relative w-full h-full bg-slate-50">
                                         {/* Scrolling Screenshots Strip */}
-                                        <div className="absolute inset-x-0 bottom-0 animate-scroll-vertical space-y-4 p-4">
-                                            {[1, 2, 3, 4].map((i) => (
-                                                <div key={i} className="w-full aspect-[9/16] bg-white rounded-3xl shadow-sm border border-slate-100 overflow-hidden">
+                                        <div className="absolute inset-x-0 top-0 animate-scroll-vertical flex flex-col px-4">
+                                            {[1, 2, 3, 4, 1, 2, 3, 4].map((i, idx) => (
+                                                <div key={idx} className="w-full aspect-[9/16] bg-white rounded-3xl shadow-sm border border-slate-100 overflow-hidden mb-4">
                                                     <img
                                                         src={`/screenshots/app-screen-${i}.jpg`}
                                                         alt={`App Screen ${i}`}
                                                         className="w-full h-full object-cover"
-                                                    />
-                                                </div>
-                                            ))}
-                                            {/* Duplicate for seamless infinite loop */}
-                                            {[1, 2, 3, 4].map((i) => (
-                                                <div key={`dup-${i}`} className="w-full aspect-[9/16] bg-white rounded-3xl shadow-sm border border-slate-100 overflow-hidden">
-                                                    <img
-                                                        src={`/screenshots/app-screen-${i}.jpg`}
-                                                        alt={`App Screen ${i} Duplicate`}
-                                                        className="w-full h-full object-cover text-[0px]"
                                                     />
                                                 </div>
                                             ))}
@@ -225,7 +215,7 @@ export default function Hero() {
                     100% { transform: translateY(-50%); }
                 }
                 .animate-scroll-vertical {
-                    animation: scroll-vertical 20s linear infinite;
+                    animation: scroll-vertical 25s linear infinite;
                 }
             `}</style>
         </div>

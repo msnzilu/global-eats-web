@@ -153,7 +153,7 @@ const Testimonials = () => {
                             <div className="flex items-center gap-4">
                                 <div className="w-10 h-10 bg-white/20 rounded-full flex items-center justify-center font-bold">JD</div>
                                 <div>
-                                    <p className="font-bold">Dr. Jane Doe</p>
+                                    <p className="font-bold">Dr. Jane McLaughlin</p>
                                     <p className="text-sm opacity-80">Certified Dietitian (LDN)</p>
                                 </div>
                             </div>
