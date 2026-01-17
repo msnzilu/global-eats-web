@@ -69,7 +69,7 @@ export default function Navbar() {
                     {/* CTA Button */}
                     <div className="hidden md:flex items-center gap-4">
                         <a
-                            href="https://play.google.com/apps/internaltest/4699099946547725940"
+                            href="https://play.google.com/store/apps/details?id=com.prepzi.app&pcampaignid=web_share"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="px-6 py-2.5 bg-gradient-to-r from-emerald-600 to-teal-600 text-white rounded-lg font-semibold hover:shadow-lg transform hover:-translate-y-0.5 transition-all duration-200"

@@ -1,47 +1,53 @@
+'use client';
+
 import React from 'react';
-import { Leaf, Heart, Globe } from 'lucide-react';
+import { Leaf, Heart, Globe, TrendingDown, Target } from 'lucide-react';
 
 const Features = () => {
     const features = [
         {
             icon: Leaf,
-            title: "Smart Inventory",
-            description: "Track fresh ingredients and get personalized recipe suggestions",
-            stat: "90% less waste",
+            title: "Keep Money in Your Pocket",
+            description: "Stop throwing away food you bought. Our smart inventory tells you exactly what to cook before it spoils.",
+            stat: "Keep $40/month instead of your trash",
             color: "emerald"
         },
         {
-            icon: Heart,
-            title: "Nutrition First",
-            description: "Every meal plan is balanced and tailored to your health goals",
-            stat: "100% nutritionist-approved",
-            color: "rose"
+            icon: Target,
+            title: "Zero Guesswork",
+            description: "Every meal is scientifically balanced. No more wondering if you're eating the right calories or macros.",
+            stat: "Scientifically Balanced",
+            color: "orange"
         },
         {
             icon: Globe,
-            title: "Global Flavors",
-            description: "Explore healthy dishes from cuisines around the world",
-            stat: "80+ cuisines",
+            title: "Never Get Bored",
+            description: "Access 50,000+ recipes from 80+ countries. Eat healthy without ever eating the same thing twice.",
+            stat: "50,000+ Global Recipes",
             color: "teal"
         }
     ];
 
     const benefits = [
-        { emoji: "🥬", label: "Fresh & Organic" },
-        { emoji: "💪", label: "Fitness Focused" },
-        { emoji: "🌱", label: "Sustainable" },
-        { emoji: "⏱️", label: "Time Saving" }
+        { emoji: "🥬", label: "90% Less Waste" },
+        { emoji: "💍", label: "Premium Access" },
+        { emoji: "🌱", label: "Eco-Friendly" },
+        { emoji: "⏱️", label: "60s Setup" }
     ];
 
     return (
         <div className="py-24 bg-white" id="features">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="text-center mb-16">
-                    <h2 className="text-5xl md:text-6xl font-bold text-slate-900 mb-4" style={{ fontFamily: 'Outfit, sans-serif' }}>
-                        Why Choose <span className="text-emerald-600">Prepzi</span>?
+                    <div className="inline-flex items-center gap-2 px-4 py-2 bg-emerald-50 text-emerald-700 rounded-full text-sm font-bold mb-4">
+                        <Heart className="w-4 h-4 fill-emerald-700" />
+                        Recommended by 500+ dietitians
+                    </div>
+                    <h2 className="text-5xl md:text-6xl font-bold text-slate-900 mb-4">
+                        Outcome-Focused <span className="text-emerald-600">Health</span>
                     </h2>
-                    <p className="text-xl text-slate-600 max-w-2xl mx-auto">
-                        The smartest way to eat healthy, reduce waste, and explore world cuisines
+                    <p className="text-xl text-slate-600 max-w-2xl mx-auto font-medium">
+                        Stop focusing on features. Start focusing on the version of you that saves more, wastes less, and feels better every single day.
                     </p>
                 </div>
 
@@ -52,14 +58,14 @@ const Features = () => {
                         return (
                             <div
                                 key={i}
-                                className="group bg-gradient-to-br from-slate-50 to-white p-8 rounded-2xl border-2 border-slate-100 hover:border-emerald-200 transition-all duration-300 hover:shadow-2xl transform hover:-translate-y-2"
+                                className="group bg-gradient-to-br from-slate-50 to-white p-8 rounded-[2rem] border-2 border-slate-100 hover:border-emerald-200 transition-all duration-500 hover:shadow-2xl"
                             >
-                                <div className={`w-16 h-16 bg-gradient-to-br from-${feature.color}-500 to-${feature.color}-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300`}>
+                                <div className={`w-16 h-16 bg-${feature.color}-500 rounded-2xl flex items-center justify-center mb-6 group-hover:rotate-6 transition-transform duration-300 shadow-lg shadow-${feature.color}-500/20`}>
                                     <Icon className="w-8 h-8 text-white" />
                                 </div>
                                 <h3 className="text-2xl font-bold text-slate-900 mb-3">{feature.title}</h3>
-                                <p className="text-slate-600 mb-4">{feature.description}</p>
-                                <div className="inline-block px-4 py-2 bg-emerald-100 text-emerald-700 rounded-full text-sm font-semibold">
+                                <p className="text-slate-600 mb-4 leading-relaxed">{feature.description}</p>
+                                <div className="inline-block px-4 py-2 bg-slate-900 text-white rounded-xl text-sm font-bold">
                                     {feature.stat}
                                 </div>
                             </div>
@@ -67,13 +73,14 @@ const Features = () => {
                     })}
                 </div>
 
-                {/* Benefits */}
-                <div className="bg-gradient-to-r from-emerald-600 to-teal-600 rounded-3xl p-8 md:p-12 shadow-2xl">
-                    <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+                {/* Benefits Banner */}
+                <div className="bg-slate-900 rounded-[3rem] p-8 md:p-12 shadow-2xl relative overflow-hidden">
+                    <div className="absolute top-0 right-0 w-64 h-64 bg-emerald-500/10 rounded-full blur-3xl transform translate-x-1/2 -translate-y-1/2"></div>
+                    <div className="grid grid-cols-2 md:grid-cols-4 gap-6 relative z-10">
                         {benefits.map((benefit, i) => (
                             <div key={i} className="text-center">
                                 <div className="text-5xl mb-3">{benefit.emoji}</div>
-                                <div className="text-white font-semibold">{benefit.label}</div>
+                                <div className="text-white font-bold tracking-tight uppercase text-sm">{benefit.label}</div>
                             </div>
                         ))}
                     </div>

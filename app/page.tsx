@@ -4,17 +4,22 @@ import Hero from '@/components/Hero';
 import Features from '@/components/Features';
 import HowItWorks from '@/components/HowItWorks';
 import Testimonials from '@/components/Testimonials';
+import WasteCalculator from '@/components/WasteCalculator';
+import EatingStyleQuiz from '@/components/EatingStyleQuiz';
+import Pricing from '@/components/Pricing';
 import FAQ from '@/components/FAQs';
 import DownloadCTA from '@/components/DownloadCTA';
 import Footer from '@/components/Footer';
 import ContactUs from '@/components/ContactUs';
+import ExitIntentPopup from '@/components/ExitIntentPopup';
 
 const Page = () => {
   return (
     <>
+      <ExitIntentPopup />
       {/* Skip to main content for accessibility and SEO */}
-      <a 
-        href="#main-content" 
+      <a
+        href="#main-content"
         className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-50 focus:px-4 focus:py-2 focus:bg-green-600 focus:text-white focus:rounded"
       >
         Skip to main content
@@ -33,9 +38,19 @@ const Page = () => {
             <Hero />
           </section>
 
+          {/* Interactive - Waste Calculator */}
+          <section id="waste-calculator">
+            <WasteCalculator />
+          </section>
+
           {/* Features Section */}
           <section aria-labelledby="features-heading">
             <Features />
+          </section>
+
+          {/* Eating Style Quiz */}
+          <section id="quiz">
+            <EatingStyleQuiz />
           </section>
 
           {/* How It Works Section */}
@@ -46,6 +61,11 @@ const Page = () => {
           {/* Testimonials Section */}
           <section aria-labelledby="testimonials-heading">
             <Testimonials />
+          </section>
+
+          {/* Pricing Section */}
+          <section id="pricing">
+            <Pricing />
           </section>
 
           {/* FAQ Section */}
